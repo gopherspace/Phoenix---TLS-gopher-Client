@@ -1,0 +1,12 @@
+[
+    {
+        "name": "gopherspace.de | TLS",
+        "url": "gophers://gopherspace.de:7070/",
+        "type": "1"
+    },
+    {
+        "name": "GLORIA Search | TLS",
+        "url": "gophers://gopherspace.de:7070/1/search/gloria2.php",
+        "type": "1"
+    }
+]
