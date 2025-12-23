@@ -31,7 +31,7 @@ Available accents: accentblue, green (success), red (danger), orange (warning), 
     "17": "warning"
   }
 }
-
+```
 ## 🛠 Technical Information
 
     Author: René Gabel (gopherspace.de)
