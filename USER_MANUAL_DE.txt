@@ -1,0 +1,104 @@
+Phoenix TLS Gopher+ Client – Bedienungsanleitung (2025)
+
+
+Willkommen bei Phoenix, Ihrem modernen Gateway zum Gopherspace. Diese Anleitung erklärt die Kernfunktionen des Clients.
+
+1. TLS/gophers Support
+----------------------
+
+Phoenix unterstützt verschlüsselte Verbindungen nativ.
+
+    Nutzung: Geben Sie in der Adresszeile gophers:// anstatt gopher:// ein, um eine gesicherte TLS-Verbindung aufzubauen.
+    Sicherheit: Phoenix akzeptiert standardmäßig auch selbstsignierte Zertifikate. Klicken Sie auf das Schloss-Symbol für Zertifikats-Statusmeldungen.
+
+2. Bookmark Management (Lesezeichen)
+------------------------------------
+
+Verwalten Sie Ihre Lieblingsorte im Gopherspace effizient.
+
+    Hinzufügen: Klicken Sie auf das Stern-Symbol oder wählen Sie „Lesezeichen hinzufügen“, während Sie auf einer Seite sind.
+    Verwalten: Über das Menü „Bookmarks“ können Sie gespeicherte Seiten aufrufen, bearbeiten oder löschen. Lesezeichen werden lokal gespeichert und bleiben beim Neustart erhalten.
+
+3. Gopher+ Metadata Support
+---------------------------
+
+Phoenix kann erweiterte Informationen verarbeiten, die über das Standard-Gopher-Protokoll hinausgehen.
+
+    Funktion: Wenn ein Server Gopher+ unterstützt, erkennt Phoenix Metadaten des Autors oder alternative Dateiformate.
+    Nutzung: Fahren Sie mit der Maus links vor einen Link, welcher mit [+] gekennzeichnet ist. Drücken und halten Sie
+	         die Shift-Taste gedrückt und fahren Sie mit der Maus darüber. Jetzt werden die gopher+ Metadaten angezeigt.
+
+4. enhanced:eXperience Support
+------------------------------
+
+Diese Funktion setzt farbliche Akzente in Gopher.
+
+    Automatische Erkennung:	Phoenix erkennt, wenn ein Gopher Server akzente unterstützt, indem auf der gophermap Datei der tag enhanced:eXperience vorhanden ist.
+    Darstellung: 			gophermap-Dateien werden mit verbesserter Formatierung angezeigt. Das ermöglicht ein modernes Leseerlebnis im alten Protokoll.
+	Funktionsweise: 		Auf dem Gopher Server wird parallel zur gophermap eine Datei mit dem namen enhanced.experience abgelegt.
+							Die enhanced.experience ist eine Datei im JSON Format. Sie enthält eine zeilenbasierte Zuordnung verfügbarer Farben (Akzente).
+							Jede zeile einer gophermap kann somit individuell eingeferbt werden, es stehen 6 Farben zur Verfügung.
+							Die Zuordnung geschied hier ganz einfach per Angabe einer Zeilennummer, gefolgt von der gewünschten Farbe, gezählt wird ab 0.
+	
+	Farbtabelle:			accent = accentblue | success = green | danger = red | warning = orange | header = blue | secondary = grey
+    
+	Aufbau der enhanced.experience Datei:  Hierbei werden die Zeilen 0,7 und 17 einer gophermap mit accentblue und orange hervorgehoben.	
+	
+	{
+
+     "rules": {
+       "0": "accent",
+       "7": "accent",
+       "17": "warning"
+     }
+    }				
+
+5. Dynamic Theme Engine (12 Designs)
+------------------------------------
+
+Das Aussehen von Phoenix kann an den persönlichen Geschmack angepasst werden.
+
+    Wechsel: Gehen Sie zu „Einstellungen“ -> „Themes“.
+    Auswahl: Wählen Sie aus 12 Designs. Die Änderung wird sofort auf alle Fenster angewendet.
+
+6. Internationalization Support (8 Sprachen)
+--------------------------------------------
+
+Phoenix unterstützt mehrere Sprachen.
+
+    Sprachauswahl: Der Client unterstützt 8 Sprachen, darunter Deutsch, Englisch, Französisch, Spanisch und Italienisch.
+    Einstellung: Die Sprache wird beim ersten Start automatisch ausgewählt, kann aber jederzeit manuell in den Einstellungen geändert werden.
+
+Viel Freude beim Erkunden des Gopherspace mit Phoenix!
+Support & Informationen: gopherspace.de
+
+
+
+###############################################################
+
+PHOENIX - TLS Gopher+ CLIENT INFORMATION
+_______________________________________________________________
+
+Name:	Phoenix | TLS Gopher+ Client
+Version:	1.1.7 (Build 2025-Rev1)
+Author:	René Gabel (gopherspace.de)
+Engineering:	AI-assisted by Google Gemini
+Last change:	22. Dezember 2025
+
+_______________________________________________________________
+
+Features:
+
+* TLS/gophers Support
+* Bookmark management
+* Gopher+ Metadata Support
+* enhanced:eXperience Support
+* Dynamic Theme Engine (12 designs)
+* Internationalization Support (8 languages)
+_______________________________________________________________
+
+License:
+
+* MIT License & CC BY-NC 4.0
+* Copyright (c) 2025 René Gabel/gopherspace.de
+* Full license text available in the LICENSE.txt file in the program folder.

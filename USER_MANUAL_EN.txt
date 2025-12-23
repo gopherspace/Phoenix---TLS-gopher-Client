@@ -1,0 +1,104 @@
+Phoenix TLS Gopher+ Client – User Manual (2025)
+
+
+Welcome to Phoenix, your modern gateway to Gopherspace. This manual explains the core features of the client.
+
+1. TLS/gophers Support
+----------------------
+
+Phoenix natively supports encrypted connections.
+
+    Usage: Enter gophers:// instead of gopher:// in the address bar to establish a secure TLS connection.
+    Security: By default, Phoenix accepts self-signed certificates. Click on the lock icon to view certificate status messages.
+
+2. Bookmark Management
+----------------------
+
+Manage your favorite Gopherspace locations efficiently.
+
+    Adding: Click the star icon or select "Add Bookmark" while browsing a page.
+    Managing: Use the "Bookmarks" menu to access, edit, or delete saved entries. Bookmarks are stored locally and persist after a restart.
+
+3. Gopher+ Metadata Support
+---------------------------
+
+Phoenix can process extended information beyond the standard Gopher protocol.
+
+    Feature: If a server supports Gopher+, Phoenix detects author metadata or alternative file formats.
+    Usage: Move your mouse over a link marked with [+]. Press and hold the Shift key while hovering over it to display the Gopher+ metadata.
+
+4. enhanced:eXperience Support
+------------------------------
+
+This feature adds color highlights to Gopher.
+
+    Auto-Detection: 	Phoenix detects if a Gopher server supports accents by checking for the enhanced:eXperience tag within the gophermap file.
+    Presentation: 		gophermap files are displayed with enhanced formatting, providing a modern reading experience within the classic protocol.
+    How it works: 		A file named enhanced.experience is placed on the Gopher server parallel (in the same directory) to the gophermap.
+    Technical Details: 	The enhanced.experience file is in JSON format. It contains a line-based mapping of available colors (accents). Each line of a gophermap can be colored individually; 6 colors are available. Lines are counted starting from 0.
+    Color Table: 		accent = accentblue | success = green | danger = red | warning = orange | header = blue | secondary = grey
+    
+	Structure of the enhanced.experience file:
+	
+    In this example, lines 0, 7, and 17 of a gophermap are highlighted with accentblue and orange:
+	
+    json
+
+    {
+      "rules": {
+        "0": "accent",
+        "7": "accent",
+        "17": "warning"
+      }
+    }
+
+
+5. Dynamic Theme Engine (12 Designs)
+------------------------------------
+
+The appearance of Phoenix can be customized to your preference.
+
+    Changing Themes: Go to "Settings" -> "Themes".
+    Selection: Choose from 12 designs. The change is applied immediately to all windows.
+
+6. Internationalization Support (8 Languages)
+---------------------------------------------
+
+Phoenix supports multiple languages.
+
+    Languages: The client supports 8 languages, including German, English, French, Spanish, and Italian.
+    Settings: The language is automatically detected on first launch but can be changed manually in the settings at any time.
+
+Enjoy exploring the Gopherspace with Phoenix!
+Support & Information: gopherspace.de
+
+
+
+###############################################################
+
+PHOENIX - TLS Gopher+ CLIENT INFORMATION
+_______________________________________________________________
+
+Name:           Phoenix | TLS Gopher+ Client
+Version:        1.1.7 (Build 2025-Rev1)
+Author:         René Gabel (gopherspace.de)
+Engineering:    AI-assisted by Google Gemini
+Last change:    22. Dezember 2025
+
+_______________________________________________________________
+
+Features:
+
+* TLS/gophers Support
+* Bookmark management
+* Gopher+ Metadata Support
+* enhanced:eXperience Support
+* Dynamic Theme Engine (12 designs)
+* Internationalization Support (8 languages)
+_______________________________________________________________
+
+License:
+
+* MIT License & CC BY-NC 4.0
+* Copyright (c) 2025 René Gabel/gopherspace.de
+* Full license text available in the LICENSE.txt file in the program folder.
