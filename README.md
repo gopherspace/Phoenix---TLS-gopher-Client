@@ -38,6 +38,13 @@ Available accents: accentblue, green (success), red (danger), orange (warning), 
     Engineering: AI-assisted by Google Gemini
     Build: 2025-Rev1 (Last change: December 23, 2025)
 
+## 📥 Download
+
+Precompiled binaries for **Linux** and **Windows** are available as ZIP archives. You can download the latest version from:
+
+*   **Web:**    https://gopherspace.de
+*   **Gopher:** gophers://gopherspace.de:7070
+
 ## ⚖️ License
 
 This project is licensed under:
