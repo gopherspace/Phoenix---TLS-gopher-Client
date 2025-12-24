@@ -54,4 +54,10 @@ This project is licensed under:
 
 Please refer to the LICENSE.txt file for the full legal text.
 
+## Pictures
+
+![Phoenix_Darkly](Phoenix_Darkly.png)
+![Phoenix_Superhero](Phoenix_Superhero.png)
+![Phoenix_Lumen](Phoenix_Lumen.png)
+
 Enjoy exploring the Gopherspace with Phoenix!
