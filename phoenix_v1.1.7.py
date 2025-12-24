@@ -311,6 +311,9 @@ def start_binary_download(url):
         # Status zurücksetzen - nutzt jetzt get_text
         root.after(0, lambda: status_label.config(text=get_text('ui_status_ready'), bootstyle="success"))
 
+    thread = threading.Thread(target=dl_worker, daemon=True)
+    thread.start()
+
 
 # --- Lesezeichen-Management ---
 BOOKMARKS_FILE = 'phoenix.bookmark'
@@ -1109,3 +1112,4 @@ root.protocol("WM_DELETE_WINDOW", on_closing)
 root.after(100, fetch_gopher_data)
 root.after(200, refresh_bookmark_menu)
 root.mainloop()
+
